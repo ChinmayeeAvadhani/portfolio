@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chinmayee Avadhani - Software Developer Portfolio showcasing projects and skills">
+    <meta name="keywords" content="software developer, web development, portfolio, projects">
+    <meta name="author" content="Chinmayee Avadhani">
+    <title>Chinmayee Avadhani | Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Neural Network Background Canvas -->
+    <canvas id="neuralNetworkCanvas"></canvas>
+
+    <!-- Welcome Screen -->
+    <div class="welcome-screen" id="welcomeScreen">
+        <canvas id="codeRainCanvas"></canvas>
+        <div class="welcome-content">
+            <h1 class="welcome-title" data-text="Hello World">Hello World</h1>
+            <div class="welcome-subtitle">
+                <span class="typing-welcome"></span>
+                <span class="cursor-welcome"></span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero-section glass-card">
+            <div class="hero-content">
+                <div class="profile-image-wrapper">
+                    <img src="profile.jpg" alt="Chinmayee Avadhani" class="profile-image" id="profileImage">
+
+
+                </div>
+
+                <h1 class="hero-name">Chinmayee Avadhani</h1>
+                <p class="hero-role">Web Developer | Designer</p>
+
+
+
+                <p class="hero-description">
+                    Passionate about building seamless, user-centric web experiences with a touch of modern design.
+                </p>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/chinmayee-avadhani-b0a6b9330/" target="_blank"
+                        rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/chinmayeeavadhani" target="_blank" rel="noopener noreferrer"
+                        class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:chinmayeeavadhani@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="cta-button btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <h2 class="section-title">
+                <span class="title-line"></span>
+                ABOUT ME
+                <span class="title-line"></span>
+            </h2>
+            <div class="glass-card">
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-intro">
+                            Hi, I'm <span class="highlight">Chinmayee Avadhani</span>, a web developer and designer
+                            focused
+                            on creating clean, responsive, and visually impactful digital experiences. I specialise in
+                            building user-friendly websites that balance creativity with functionality and performance.
+                        </p>
+                        <p class="about-description">
+                            I stay actively engaged in tech events and workshops to keep my skills aligned with modern
+                            design and development standards, ensuring every project feels refined, strategic, and
+                            seamless.
+                        </p>
+                    </div>
+
+                    <!-- Workflow Timeline -->
+                    <div class="workflow-timeline">
+                        <div class="workflow-step">
+                            <div class="workflow-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="workflow-label">Discover</div>
+                        </div>
+                        <div class="workflow-connector">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="workflow-step">
+                            <div class="workflow-icon">
+                                <i class="fas fa-pencil-ruler"></i>
+                            </div>
+                            <div class="workflow-label">Design</div>
+                        </div>
+                        <div class="workflow-connector">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="workflow-step">
+                            <div class="workflow-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="workflow-label">Develop</div>
+                        </div>
+                        <div class="workflow-connector">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="workflow-step">
+                            <div class="workflow-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="workflow-label">Deliver</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <h2 class="section-title">
+                <span class="title-line"></span>
+                TECH STACK
+                <span class="title-line"></span>
+            </h2>
+
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category glass-card">
+                    <h3 class="category-title"><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category glass-card">
+                    <h3 class="category-title"><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category glass-card">
+                    <h3 class="category-title"><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-terminal"></i>
+                            <span>VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+            <h2 class="section-title">
+                <span class="title-line"></span>
+                SELECTED WORK
+                <span class="title-line"></span>
+            </h2>
+
+            <div class="projects-grid">
+                <!-- Project 1: Survey Form -->
+                <article class="project-card glass-card" data-project="1">
+                    <div class="project-image-container">
+                        <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&h=600&fit=crop"
+                            alt="Survey Form Project" class="project-image">
+                        <div class="project-title-overlay">
+                            <h3 class="project-title">Survey Form</h3>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <p class="project-description">
+                            Interactive survey form with modern UI/UX design, featuring responsive layouts and smooth
+                            user interactions.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="https://chinmayeeavadhani.github.io/survey_form/" target="_blank"
+                            rel="noopener noreferrer" class="btn-primary" onclick="event.stopPropagation()">
+                            View Live <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 2: Codesoft -->
+                <article class="project-card glass-card" data-project="2">
+                    <div class="project-image-container">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop"
+                            alt="Codesoft Project" class="project-image">
+                        <div class="project-title-overlay">
+                            <h3 class="project-title">Codesoft Projects</h3>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <p class="project-description">
+                            Collection of innovative coding projects demonstrating problem-solving skills and technical
+                            proficiency across various domains.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Development</span>
+                            <span class="tag">Algorithms</span>
+                            <span class="tag">Design</span>
+                        </div>
+                        <a href="https://github.com/ChinmayeeAvadhani/Codesoft" target="_blank"
+                            rel="noopener noreferrer" class="btn-primary" onclick="event.stopPropagation()">
+                            View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 3: Weather App -->
+                <article class="project-card glass-card" data-project="3">
+                    <div class="project-image-container">
+                        <img src="https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&h=600&fit=crop"
+                            alt="Weather App Project" class="project-image">
+                        <div class="project-title-overlay">
+                            <h3 class="project-title">Weather Application</h3>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <p class="project-description">
+                            Real-time weather application with dynamic data visualization, location-based forecasts, and
+                            sleek interface design.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">API Integration</span>
+                            <span class="tag">React</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                        <a href="https://github.com/ChinmayeeAvadhani/Weather_App" target="_blank"
+                            rel="noopener noreferrer" class="btn-primary" onclick="event.stopPropagation()">
+                            View on GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 4: Cafe Menu -->
+                <article class="project-card glass-card" data-project="4">
+                    <div class="project-image-container">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=600&fit=crop"
+                            alt="Cafe Menu Project" class="project-image">
+                        <div class="project-title-overlay">
+                            <h3 class="project-title">Cafe Menu</h3>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <p class="project-description">
+                            Elegant digital cafe menu with beautiful typography, appetizing visuals, and seamless
+                            browsing experience.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Web Design</span>
+                            <span class="tag">CSS Grid</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <a href="https://chinmayeeavadhani.github.io/CAFE-MENU/" target="_blank"
+                            rel="noopener noreferrer" class="btn-primary" onclick="event.stopPropagation()">
+                            View Live <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section class="certificates-section">
+            <h2 class="section-title">
+                <span class="title-line"></span>
+                CERTIFICATIONS
+                <span class="title-line"></span>
+            </h2>
+            <div class="certificates-grid">
+                <!-- Certificate 1: FreeCodeCamp -->
+                <article class="certificate-card glass-card">
+                    <div class="certificate-info-container">
+                        <h3 class="certificate-title">Responsive Web Design</h3>
+                        <p class="certificate-issuer">
+                            <i class="fas fa-certificate"></i> freeCodeCamp
+                        </p>
+                        <p class="certificate-date">
+                            <i class="far fa-calendar"></i> November 2024
+                        </p>
+                        <p class="certificate-description">
+                            Successfully completed 300 hours of comprehensive coursework covering HTML5, CSS3, Flexbox,
+                            CSS Grid, and responsive design principles. Built multiple projects demonstrating
+                            proficiency in creating mobile-first, accessible web interfaces.
+                        </p>
+                        <div class="certificate-hover-hint">
+                            <i class="fas fa-eye"></i> Hover to view certificate
+                        </div>
+                    </div>
+                    <div class="certificate-image-container">
+                        <img src="certificate-freecodecamp.jpg" alt="FreeCodeCamp Responsive Web Design Certificate"
+                            class="certificate-image">
+                    </div>
+                </article>
+
+                <!-- Certificate 2: Gen-AI Bootcamp -->
+                <article class="certificate-card glass-card">
+                    <div class="certificate-info-container">
+                        <h3 class="certificate-title">Global Gen-AI Bootcamp</h3>
+                        <p class="certificate-issuer">
+                            <i class="fas fa-certificate"></i> TechNexus Community & Elastic
+                        </p>
+                        <p class="certificate-date">
+                            <i class="far fa-calendar"></i> July 2025
+                        </p>
+                        <p class="certificate-description">
+                            Actively participated in an intensive bootcamp focused on advanced AI technologies and
+                            Generative AI applications. Held at Microsoft Ferns Office, Bengaluru, exploring
+                            cutting-edge AI tools and methodologies.
+                        </p>
+                        <div class="certificate-hover-hint">
+                            <i class="fas fa-eye"></i> Hover to view certificate
+                        </div>
+                    </div>
+                    <div class="certificate-image-container">
+                        <img src="certificate-genai.jpg" alt="Global Gen-AI Bootcamp Certificate"
+                            class="certificate-image">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section glass-card">
+            <h2 class="section-title">
+                <span class="title-line"></span>
+                LET'S CONNECT
+                <span class="title-line"></span>
+            </h2>
+            <p class="contact-text">
+                Interested in collaborating or have a project in mind? Let's create something extraordinary together.
+            </p>
+            <div class="contact-grid">
+                <a href="mailto:chinmayeeavadhani06@gmail.com" class="contact-card glass-card">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <h3>Email</h3>
+                    <p>chinmayeeavadhani06@gmail.com</p>
+                </a>
+                <a href="https://www.linkedin.com/in/chinmayee-avadhani-b0a6b9330/" target="_blank"
+                    rel="noopener noreferrer" class="contact-card glass-card">
+                    <i class="fab fa-linkedin-in contact-icon"></i>
+                    <h3>LinkedIn</h3>
+                    <p>Connect with me</p>
+                </a>
+                <a href="https://github.com/ChinmayeeAvadhani" target="_blank" rel="noopener noreferrer"
+                    class="contact-card glass-card">
+                    <i class="fab fa-github contact-icon"></i>
+                    <h3>GitHub</h3>
+                    <p>View my repositories</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Chinmayee Avadhani. Crafted with passion and code.</p>
+        </footer>
+    </div>
+
+    <script src="code-rain.js"></script>
+    <script src="neural-network.js"></script>
+    <script src="script.js?v=20251125"></script>
+
+</body>
+
+</html>
