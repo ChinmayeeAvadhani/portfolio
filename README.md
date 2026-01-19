@@ -1,6 +1,6 @@
 # Chinmayee Avadhani — Interactive Portfolio
 
-🌐 **Live Website:** https://github.com/ChinmayeeAvadhani/developer/-portfolio
+🌐 **Live Website:**  https://chinmayeeavadhani.github.io/portfolio/
 
 ## About
 This is my personal portfolio website showcasing my work as a Web Developer & Designer.  
